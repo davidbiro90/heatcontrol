@@ -1,0 +1,21 @@
+{
+  "name": "Heating Control",
+  "version": "1.0",
+  "slug": "heating_control",
+  "description": "Standalone heating control for Home Assistant.",
+  "arch": ["armv7", "arm64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "options": {
+    "update_interval": 130,
+    "heater_entity": "switch.futesvezerlorele_kazan_rele",
+    "inside_temp_sensor": "sensor.konyhamozgas_bme680_konyha_temperature",
+    "outside_temp_sensor": "sensor.wh2650a_indoor_temperature"
+  },
+  "schema": {
+    "update_interval": "int",
+    "heater_entity": "str",
+    "inside_temp_sensor": "str",
+    "outside_temp_sensor": "str"
+  }
+}
